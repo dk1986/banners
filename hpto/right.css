@@ -1,0 +1,134 @@
+/* We have taken the liberty of setting all items to have the CSS rule below.
+ * This makes for easy positioning but feel free to change as you so desire.
+ */
+*{
+	margin:0;
+	padding:0;
+	position: absolute;
+	cursor: pointer;
+}
+
+/* The component will scale to 100% of available width and height.
+ */
+html, body, #ad {
+	width:100%;
+	height:100%;
+	background: transparent url("images/right_bg.jpg") no-repeat top left;
+}
+
+
+.image{
+	top: 0px;
+/*	left: 0px;*/
+	width: 500px;
+	height: 1080px;
+}
+
+.logo{
+	left: 67px;
+	top:0;
+	width: 62px;
+	height: 57px;
+}
+
+.tijdelijk_btn, .tijdelijk_btn-back{
+	width: 76px;
+	height: 43px;
+	left:26px;
+	top: 470px;
+	z-index: 2;
+}
+
+.chickenFlag{
+    top: 209px;
+    left: 19px;
+    width: 73px;
+    height: 22px;
+    z-index: 3;
+}
+
+.flag{
+top: 205px;
+    left: 12px;
+    width: 93px;
+    height: 30px;
+    background: white;
+    z-index: 2;
+}
+
+.skew{
+	transform: skew(-20deg, 0deg) ;
+-webkit-transform: skew(-20deg, 0deg) ;
+-moz-transform: skew(-20deg, 0deg) ;
+-o-transform: skew(-20deg, 0deg) ;
+-ms-transform: skew(-20deg, 0deg) ;
+}
+
+
+
+
+
+
+
+#overlay{
+	-ms-transform: skew(-20deg,0deg);
+-webkit-transform: skew(-20deg,0deg);
+transform: skew(-20deg,0deg);
+width: 1221px;
+height: 1599px;
+overflow: hidden;
+/*top: -24px;*/
+top: 0;
+left: -206px;
+/*width: 500px;
+height: 1080px;
+overflow: hidden;
+top: 177px;
+left: 0;*/
+background-color: transparent;;
+}
+
+
+#bigTastyChicken{
+
+		-ms-transform: skew(20deg,0deg);
+	-webkit-transform: skew(20deg,0deg);
+	transform: skew(20deg,0deg);
+	left: 113px;
+}
+
+/*-webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
+clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);*/
+
+
+
+.vindRestaurant {
+		display: none;
+  border-radius: 5px;
+  background-color: rgb(156, 30, 30);
+  box-shadow: 0px 4px 0px 0px rgba(94, 0, 7, 1);
+  position: absolute;
+  left: 9px;
+  top: 540px;
+  width: 118px;
+  height: 58px;
+  z-index: 1;
+	border: 0;
+padding: 0;
+}
+
+.vindRestaurant:hover{
+	  background-color: rgb(161, 33, 32);
+	  box-shadow: 0px 4px 0px 0px rgba(90, 0, 6, 1);
+		-webkit-transition: all 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.vindRestaurant img{
+	left: 18px;
+	top: 17px;
+	width: 84px;
+  height: 25px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test ad</title>
+		
+        <script>
+            var bHasHeader=true;
+            var bHasLeft=true;
+            var bHasRight=true;
+            var bHasFooter=false;
+            var iHeaderHeight=100;
+            var iFooterHeight=90;
+            var iFooterExpandHeight=250;
+            var iMinSidesWidth=130;
+			
+			var iLeaderboardCount=1; // Only 0 and 1 supported
+        </script>
+		<style>
+            #siteimg, #inpage {
+                /* Use to fake wider website, defaults to 996px; */
+                width:996px;
+            }
+            
+            
+            
+            
+            
+            
+            /* AdLantic specific code, DO NOT ALTER */
+            
+            *{
+                margin:0;
+                padding:0;
+                background-color:black;
+            }
+			#inpage {
+				margin:5px auto;
+			}
+            #site {
+                text-align: center;
+            }
+            #message {
+                width:100%;
+                text-align:center;
+                position:absolute;
+                top:20px;
+                left: 0;
+                color:red;
+                display:none;
+                
+            }
+		</style>
+    </head>
+    <body>
+        <div id="message">Just a friendly reminder<br/>that this is a live dev environment!</div>
+        <div id="site">
+			<div id="inpage"></div>
+            <img id="siteimg" width=996 height=2270 src='//admin.ad-serverparc.nl/hpto/demosites/news_site.jpg' />
+        </div>
+            <script type="text/javascript">
+                if (document&&document.body)document.write('<span id="mastertag_anchor" style="display:none;"></span>');
+                window.top.ADLPATAGC=0;function ADLPATAG(){window.top.ADLPATAGC++;if (window.top.ADLPATAGC>2)return;
+                if (window.top && window.top.location && window.top.location.href && window.top.document.body) {
+                    bAllowAdLanticHPTO = true;
+                    if (window!=window.top)window.top.AdLanticHPTOWindow=window;
+                    window.top.AdLanticHPTOTag = document.createElement("script");
+                    window.top.AdLanticHPTOTag.setAttribute("async", "true"); window.top.AdLanticHPTOTag.setAttribute("defer", "defer");
+                    window.top.AdLanticHPTOTag.src = "//beta.ad-serverparc.nl/hpto/AdLanticHPTO.php?a="+(bAllowAdLanticHPTO?"1":"0")+"&pi=5&psi=11&hpto=rc_live_dev&cr=1&cb=" + Math.random();
+                    window.top.AdLanticTagStart = new Date();
+                    window.top.document.body.appendChild(window.top.AdLanticHPTOTag);
+                }else {if (typeof window.addEventListener!="undefined") {window.addEventListener("DOMContentLoaded", ADLPATAG, false);}}if (window.top.ADLPATAGC>1){try{window.removeEventListener ("DOMContentLoaded", ADLPATAG, false);}catch(e){}}}ADLPATAG();
+                </script>
+    </body>
+</html>

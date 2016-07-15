@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test ad</title>
+		
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				position: absolute;
+			}
+			
+			body{
+				background: #CCCCCC;
+			}
+			
+			#left {left: 0px;}
+			#header{left: 500px; width: 900px;}
+			#right{left: 1400px;}
+			#right, #left{width: 500px; height: 1080px;}
+		</style>
+    </head>
+    <body>
+		<iframe id="left" src="left/left.html" scrolling="no" style="border: 0px;"></iframe>
+        <iframe id="header" src="top/header.html" height="150" scrolling="no" style="border: 0px;"></iframe>
+        <iframe id="right" src="right/right.html" scrolling="no" style="border: 0px;"></iframe>
+    </body>
+</html>

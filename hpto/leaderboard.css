@@ -1,0 +1,28 @@
+/* We have taken the liberty of setting all items to have the CSS rule below.
+ * This makes for easy positioning but feel free to change as you so desire.
+ */
+*{
+	margin:0;
+	padding:0;
+	position: absolute;
+	cursor: pointer;
+}
+
+/* The component is set to leaderboard size.
+ */
+html, body, #ad {
+	width: 728px;
+	height: 90px;
+	background-color: white;
+}
+
+/* A border is added at full size of the leaderboard without hindering mouse events
+ * such as hovers for buttons.
+ */
+#border{
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	pointer-events: none;
+}
